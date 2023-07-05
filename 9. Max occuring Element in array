@@ -1,0 +1,19 @@
+let a= ["pune" , "hyd" , "hyd" , "bnglre" , "pune" , "pune"]
+dict={}
+max=0
+maxEle=a[0]
+for(i of a) {
+    if(dict[i]) {
+        dict[i]++;
+    }
+    else {
+        dict[i]=1
+    }
+    if(max<dict[i]) {
+        max=dict[i];
+        maxEle=i;
+    }
+}
+console.log(dict)
+
+console.log(maxEle,max)

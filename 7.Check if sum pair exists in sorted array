@@ -1,8 +1,0 @@
-let a1=[2,3,4,5,6,7,8,9,10]
-t=10
-for(i=0;i<a1.length/2;i++)
-{
-    if( t-i in a1) {
-        console.log(i,t-i)
-    }
-}

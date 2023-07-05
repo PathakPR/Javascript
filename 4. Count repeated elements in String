@@ -1,0 +1,12 @@
+let s="ababacdee"
+dict = {}
+
+for (i of s) {
+    if(dict[i]) {
+        dict[i]++;
+    }
+    else {
+        dict[i]=1
+    }
+}
+console.log(dict);

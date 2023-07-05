@@ -1,0 +1,7 @@
+let s= "Javascript practice questions list"
+
+s1= s.split(' ').reduce((acc,curr)=>acc+curr[0]+' ','');
+console.log(s1);
+
+s2=s.split(' ').map((x)=>(x[0]))     
+console.log(s2.join(' '));      

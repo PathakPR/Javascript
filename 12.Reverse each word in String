@@ -1,0 +1,3 @@
+let s ="Javascript practice questions list";       
+
+console.log(s.split(' ').map((word)=>word.split('').reverse().join('')).join(' '));

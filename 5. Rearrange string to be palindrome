@@ -1,0 +1,23 @@
+let s = "eeyrryfpp"
+let temp =''
+let mid=''
+dict = {}
+for (i of s) {
+    if (dict[i]) {
+        dict[i]++;
+    }
+    else {
+        dict[i] = 1
+    }
+}
+
+for (i in dict) {
+    if(dict[i]%2 == 0) {
+        temp=temp+i.repeat(dict[i]/2)
+    }
+    else {
+        mid=i
+    }
+}
+let right =temp.split('').reverse().join('')
+console.log(temp + mid + right);

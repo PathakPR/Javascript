@@ -1,0 +1,17 @@
+let arr=[1,2,3,1,1,2,1,1,12,1,1,1,1,14,1];
+
+max=0
+count=0
+for ( i of arr) {
+    if(i==1) {
+        count++;
+    }
+    else {
+        if(count>max) {
+            max=count;
+        }
+        count=0
+    }
+}
+
+console.log(max);

@@ -1,0 +1,12 @@
+let a=[1,2,1,4,6,7,5,4,4,6,5]
+let s="abbsaasf"
+a=s.split('');
+dict={}
+uniq=[]
+for(i of a) {
+    if(!dict.hasOwnProperty(i)) {
+        uniq.push(i);
+        dict[i]=1
+    }
+}
+console.log(uniq);

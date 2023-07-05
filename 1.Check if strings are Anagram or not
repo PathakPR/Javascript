@@ -1,0 +1,39 @@
+let s1 = "abcddaf";
+let s2 = "bcadad";
+if(s1.length !== s2.length) {
+    console.log("no");
+}
+else {
+    if((s2.split('').sort().join('')) === s1) {
+        console.log("yes")
+    }
+    else {
+        console.log("no")
+    }
+}
+//Approach 2
+dict ={}
+
+if(s1.length !== s2.length) {
+    console.log("no");
+}
+else {
+    for (i of s1) {
+        if(dict[i])
+        {
+            dict[i]++;
+        }
+        else {
+            dict[i]=1;
+        }
+    }
+    for(i of s2) {
+        if(!dict[i] || dict[i]==0) {
+            console.log("no")
+            break;
+        }
+        else {
+            dict[i]--;
+        }
+    }
+}
